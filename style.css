@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+^Mono:wght@300;700&display=swap");
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  margin: 0;
+  line-height: 1.5;
+  padding: 2em 1em;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 35% 30% 22.5% 20% 6%;
+  /* grid-template-areas:
+    "header header header"
+    "section1 section1  "
+    "article2 article1 article3"
+    "footer footer footer";*/
+}
+
+#header {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+}
+
+#section1 {
+  grid-column-start: 2;
+  grid-column-end: span 2;
+  grid-row-start: 2;
+}
+
+#article1,
+#article2 {
+  grid-row-start: 3;
+}
+#article3 {
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+}
+
+#footer {
+  grid-row-start: 5;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  padding: 10px;
+  margin-top: 1%;
+  border: #69c solid;
+  text-align: center;
+  line-height: normal;
+}
+
+header h2 {
+  margin-top: 1em;
+  text-shadow: 0 0 8px #9dadcc;
+}
+
+h1,
+h2,
+strong {
+  color: rgb(56, 182, 204);
+  font-weight: 700;
+}
+
+section,
+footer {
+  background: #e4f0f5;
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+  border-left: 2px solid #69c;
+}
+
+article {
+  padding: 1em;
+}
+
+a {
+  color: #e81c4f;
+}
+article {
+  font-family: "Roboto Mono", monospace;
+  background: #fafafa;
+  border-bottom: 1px solid #d8dee9;
+  color: #a7adba;
+}
+
+html {
+  background-image: url("images/image2.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 30%;
+}
+
+header {
+  line-height: 1.2;
+  padding: 1vw 1em;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+header img {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+  opacity: 20%;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+footer a {
+  border: 1px solid #e81c4f;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+footer a:hover {
+  background: #e81c4f;
+  color: white;
+}
