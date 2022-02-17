@@ -120,6 +120,7 @@ footer a {
   text-decoration: none;
   transition: none 200ms ease-out;
   transition-property: color, background;
+  width: 100%;
 }
 
 footer a:hover {
